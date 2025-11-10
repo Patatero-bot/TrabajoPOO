@@ -1,7 +1,7 @@
 class Departamento:
     _idDepartamento = None
     _nombre = None
-    _gerente = None  # instancia de Gerente
+    _gerente = None
 
     def __init__(self, idDepartamento, nombre, gerente=None):
         self._idDepartamento = idDepartamento
@@ -26,3 +26,4 @@ class Departamento:
 
     def __str__(self):
         return f"Departamento: {self._nombre}\nID: {self._idDepartamento}\nGerente: {self._gerente}"
+
