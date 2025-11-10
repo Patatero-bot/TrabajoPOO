@@ -10,7 +10,7 @@ class Persona:
         self._telefono = telefono
         self._email = email
 
-    # Getters
+
     def getNombre(self):
         return self._nombre
     def getApellido(self):
@@ -20,7 +20,7 @@ class Persona:
     def getEmail(self):
         return self._email
 
-    # Setters
+
     def setNombre(self, nombre):
         self._nombre = nombre
     def setApellido(self, apellido):
@@ -31,4 +31,5 @@ class Persona:
         self._email = email
 
     def __str__(self):
+
         return f"Nombre: {self._nombre} {self._apellido}\nTeléfono: {self._telefono}\nEmail: {self._email}"
