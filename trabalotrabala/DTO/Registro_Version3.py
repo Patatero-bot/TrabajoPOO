@@ -1,4 +1,4 @@
-from DAO.Conexion import ConexionBD
+from DAO.Conexion_Version3 import ConexionBD
 
 class Registro:
     def __init__(self, descripcion, horas_laborales, idpersona, idproyecto, fecha):
