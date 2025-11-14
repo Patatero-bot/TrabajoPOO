@@ -1,7 +1,7 @@
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment
 from datetime import datetime
-from DAO.Conexion import ConexionBD
+from DAO.Conexion_Version3 import ConexionBD
 
 class ExportadorExcel:
     @staticmethod
