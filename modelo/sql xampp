@@ -1,0 +1,44 @@
+--empleado--
+CREATE TABLE empleado (
+    idEmpleado INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    apellido VARCHAR(50) NOT NULL,
+    telefono VARCHAR(20) NOT NULL,
+    email VARCHAR(80),
+    direccion VARCHAR(120),
+    fechaInicio DATE NOT NULL,
+    salario FLOAT NOT NULL,
+    departamento VARCHAR(50)
+);
+--gerente--
+CREATE TABLE gerente (
+    idGerente INT PRIMARY KEY,
+    departamentoACargo VARCHAR(50),
+    FOREIGN KEY (idGerente) REFERENCES empleado(idEmpleado)
+);
+--persona--
+CREATE TABLE persona (
+    idPersona INT AUTO_INCREMENT PRIMARY KEY,
+    nombre    VARCHAR(50)  NOT NULL,
+    apellido  VARCHAR(50)  NOT NULL,
+    telefono  VARCHAR(20)  NOT NULL,
+    email     VARCHAR(80)
+);
+--departamento--
+CREATE TABLE departamento (
+    idDepartamento INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    idGerente INT,
+    FOREIGN KEY (idGerente) REFERENCES gerente(idGerente)
+);
+--registro de tiempo--
+CREATE TABLE registro_tiempo (
+    idRegistro INT AUTO_INCREMENT PRIMARY KEY,
+    idEmpleado INT NOT NULL,
+    idProyecto INT NOT NULL,
+    fecha DATE NOT NULL,
+    horasTrabajadas FLOAT NOT NULL,
+    descripcion TEXT
+  );
+
+
