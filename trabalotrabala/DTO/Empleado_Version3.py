@@ -1,5 +1,5 @@
-from DTO.Usuario import Usuario
-from DAO.Conexion import ConexionBD
+from DTO.Usuario_Version3 import Usuario
+from DAO.Conexion_Version3 import ConexionBD
 
 class Empleado(Usuario):
     def __init__(self, username, password, nombre_completo, fono, email, direccion,
