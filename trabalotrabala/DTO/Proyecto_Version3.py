@@ -1,4 +1,4 @@
-from DAO.Conexion import ConexionBD
+from DAO.Conexion_Version3 import ConexionBD
 
 class Proyecto:
     def __init__(self, nombre, descripcion, iddepartamento, idproyecto=None):
