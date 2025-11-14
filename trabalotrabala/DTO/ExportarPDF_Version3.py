@@ -4,7 +4,7 @@ from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib import colors
 from reportlab.lib.units import inch
 from datetime import datetime
-from DAO.Conexion import ConexionBD
+from DAO.Conexion_Version3 import ConexionBD
 
 class ExportadorPDF:
     @staticmethod
