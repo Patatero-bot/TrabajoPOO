@@ -1,11 +1,11 @@
-from DAO.Conexion import ConexionBD
-from DTO.Empleado import Empleado
-from DTO.Departamento import Departamento
-from DTO.Proyecto import Proyecto
-from DTO.AsignacionProyecto import AsignacionProyecto
-from DTO.Registro import Registro
-from DTO.ExportarPDF import ExportadorPDF
-from DTO.ExportarExcel import ExportadorExcel
+from DAO.Conexion_Version3 import ConexionBD
+from DTO.Empleado_Version3 import Empleado
+from DTO.Departamento_Version3 import Departamento
+from DTO.Proyecto_Version3 import Proyecto
+from DTO.AsignacionProyecto_Version3 import AsignacionProyecto
+from DTO.Registro_Version3 import Registro
+from DTO.ExportarPDF_Version3 import ExportadorPDF
+from DTO.ExportarExcel_Version3 import ExportadorExcel
 from datetime import datetime
 import getpass
 
